@@ -27,7 +27,7 @@ export function CreateForm(){
             <h1>Create Event</h1>
             <form>
                 <input type="text" name="name" placeholder="Enter name" required onChange={handleInput}/>
-                <input type="text" name="date" placeholder="Enter date" required onChange={handleInput}/>
+                <input type="datetime-local" name="date" placeholder="Enter date" required onChange={handleInput}/>
                 <input type="text" name="game" placeholder="Enter game" required onChange={handleInput}/>
                 <input type="text" name="members" placeholder="Enter members" required onChange={handleInput}/>
                 <button onClick={handleButton}>

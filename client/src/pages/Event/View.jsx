@@ -53,12 +53,21 @@ export function View(){
         )
     }
 
+    const formattedDate = new Date(event.date).toLocaleString("cs-CZ", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false,
+    });
+
     return(
         <>
             <h1>View Event</h1>
             <p>ID: {id}</p>
             <p>Name: {event.name}</p>
-            <p>Date: {event.date}</p>
+            <p>Date: {formattedDate}</p>
             <p>Game: {event.game}</p>
             <p>Members: {event.members}</p>
             <form>

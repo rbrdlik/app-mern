@@ -59,7 +59,7 @@ export function UpdateForm(){
             <h1>Update Event</h1>
             <form>
                 <input type="text" name="name" placeholder="Enter name" required onChange={handleInput} defaultValue={event.name}/>
-                <input type="text" name="date" placeholder="Enter date" required onChange={handleInput} defaultValue={event.date}/>
+                <input type="datetime-local" name="date" placeholder="Enter date" required onChange={handleInput} defaultValue={event.date}/>
                 <input type="text" name="game" placeholder="Enter game" required onChange={handleInput} defaultValue={event.game}/>
                 <input type="text" name="members" placeholder="Enter members" required onChange={handleInput} defaultValue={event.members}/>
                 <button onClick={handleButton}>
